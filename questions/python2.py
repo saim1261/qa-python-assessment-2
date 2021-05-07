@@ -50,9 +50,14 @@ def one(string):
     # What operator will give you the remainder?
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
-
 def two(number):
-    return False
+    if number % 1 and number % number:
+        return True
+    else:
+        return False
+
+
+two(5)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -123,8 +128,12 @@ def four(string1, string2):
     # The random module contains a function called randint.
 
 
-def five():
-    return []
+import random
+
+even = [random.randrange(100, 200, 100) for integer in range(5)]
+for num in even:
+    if num % 2 == 0:
+        print(num, end=" ")
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -145,8 +154,9 @@ def five():
     # There are no hints for this question.
 
 
-def six(string):
-    return False
+text = input('text?')
+result = text.endswith('py')
+print(result)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
